@@ -75,12 +75,14 @@
 	--radius-md: calc(var(--radius) - 2px);
 	--radius-lg: var(--radius);
 	--radius-xl: calc(var(--radius) + 4px);
-	--color-black: var(--black);
-	--color-deep: var(--deep);
-	--color-green: var(--green);
-	--color-mid: var(--mid);
+	--color-navy: var(--navy);
+	--color-navy-dark: var(--navy-dark);
+	--color-navy-light: var(--navy-light);
+	--color-steel: var(--steel);
+	--color-steel-light: var(--steel-light);
 	--color-gold: var(--gold);
-	--color-gold-lt: var(--gold-lt);
+	--color-gold-light: var(--gold-light);
+	--color-gold-muted: var(--gold-muted);
 	--color-cream: var(--cream);
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
@@ -92,7 +94,7 @@
 	--color-primary-foreground: var(--primary-foreground);
 	--color-secondary: var(--secondary);
 	--color-secondary-foreground: var(--secondary-foreground);
-	--color-muted: var(--green);
+	--color-muted: var(--muted);
 	--color-muted-foreground: var(--muted-foreground);
 	--color-accent: var(--accent);
 	--color-accent-foreground: var(--accent-foreground);
@@ -125,86 +127,69 @@
 	--color-warning-foreground: var(--warning-foreground);
 }
 
-:root,
-.light {
-	--muted: #617169;
-	--border: rgba(12, 21, 16, 0.12);
+:root {
 	--radius: 0.5rem;
-	--background: #002b4d;
-	--foreground: #fff;
-	--card: #9bbaca;
-	--card-foreground: #fff;
-	--popover: #9bbaca;
-	--popover-foreground: #fff;
-	--primary: #002b4d;
-	--primary-foreground: #9bbaca;
-	--secondary: color-mix(in srgb, var(--green) 8%, white);
-	--secondary-foreground: #fff;
-	--selection: color-mix(in srgb, var(--gold-lt) 60%, white);
-	--selection-foreground: #fff;
-	--muted-foreground: var(--muted);
-	--accent: color-mix(in srgb, var(--green) 10%, white);
-	--accent-foreground: #fff;
-	--destructive: #e05252;
-	--input: rgba(12, 21, 16, 0.08);
-	--ring: var(--primary);
-	--chart-1: var(--gold);
-	--chart-2: var(--gold-lt);
-	--chart-3: color-mix(in srgb, var(--gold) 65%, var(--green));
-	--chart-4: color-mix(in srgb, var(--gold) 45%, var(--mid));
-	--chart-5: color-mix(in srgb, var(--gold-lt) 35%, #fff);
-	--sidebar: var(--card);
-	--sidebar-foreground: #fff;
-	--sidebar-primary: var(--primary);
-	--sidebar-primary-foreground: var(--primary-foreground);
-	--sidebar-accent: var(--accent);
-	--sidebar-accent-foreground: var(--accent-foreground);
-	--sidebar-border: var(--border);
-	--sidebar-ring: var(--ring);
-	--surface: rgba(17, 42, 24, 0.04);
-	--surface-foreground: #fff;
-	--warning: color-mix(in srgb, var(--gold-lt) 40%, white);
-	--warning-foreground: #fff;
-	color-scheme: light;
-}
 
-.dark {
-	--background: var(--black);
-	--foreground: var(--cream);
-	--card: var(--deep);
-	--card-foreground: var(--cream);
-	--popover: var(--deep);
-	--popover-foreground: var(--cream);
-	--primary: var(--gold);
-	--primary-foreground: var(--black);
-	--secondary: color-mix(in srgb, var(--green) 75%, transparent);
-	--secondary-foreground: var(--cream);
-	--selection: color-mix(in srgb, var(--gold) 75%, transparent);
-	--selection-foreground: var(--black);
-	--muted-foreground: var(--muted);
-	--accent: var(--mid);
-	--accent-foreground: var(--cream);
+	/* Brand palette */
+	--navy: #002b4d;
+	--navy-dark: #001d35;
+	--navy-light: #003a6b;
+	--steel: #9bbaca;
+	--steel-light: #c2d8e5;
+	--gold: #c4973a;
+	--gold-light: #d9b264;
+	--gold-muted: #e8d4a0;
+	--cream: #f8f4ed;
+	--slate: #617169;
+
+	/* Semantic tokens */
+	--background: #002b4d;
+	--foreground: #ffffff;
+	--card: rgba(0, 58, 107, 0.6);
+	--card-foreground: #ffffff;
+	--popover: #001d35;
+	--popover-foreground: #ffffff;
+	--primary: #c4973a;
+	--primary-foreground: #001d35;
+	--secondary: rgba(155, 186, 202, 0.15);
+	--secondary-foreground: #ffffff;
+	--muted: rgba(155, 186, 202, 0.1);
+	--muted-foreground: #9bbaca;
+	--accent: rgba(196, 151, 58, 0.12);
+	--accent-foreground: #c4973a;
 	--destructive: #e05252;
-	--input: rgba(196, 151, 58, 0.12);
-	--ring: var(--gold);
-	--chart-1: var(--gold);
-	--chart-2: var(--gold-lt);
-	--chart-3: color-mix(in srgb, var(--gold) 65%, var(--green));
-	--chart-4: color-mix(in srgb, var(--gold) 45%, var(--mid));
-	--chart-5: color-mix(in srgb, var(--gold-lt) 35%, var(--deep));
-	--sidebar: var(--deep);
-	--sidebar-foreground: var(--cream);
-	--sidebar-primary: var(--gold);
-	--sidebar-primary-foreground: var(--black);
-	--sidebar-accent: var(--green);
-	--sidebar-accent-foreground: var(--cream);
-	--sidebar-border: var(--border);
-	--sidebar-ring: var(--gold);
-	--surface: color-mix(in srgb, var(--green) 35%, transparent);
-	--surface-foreground: var(--cream);
-	--warning: color-mix(in srgb, var(--gold-lt) 60%, transparent);
-	--warning-foreground: var(--black);
-	color-scheme: dark;
+	--border: rgba(155, 186, 202, 0.15);
+	--input: rgba(155, 186, 202, 0.1);
+	--ring: #c4973a;
+	--selection: rgba(196, 151, 58, 0.3);
+	--selection-foreground: #ffffff;
+	--surface: rgba(0, 58, 107, 0.4);
+	--surface-foreground: #ffffff;
+	--warning: rgba(196, 151, 58, 0.2);
+	--warning-foreground: #c4973a;
+
+	/* Charts */
+	--chart-1: #c4973a;
+	--chart-2: #d9b264;
+	--chart-3: #9bbaca;
+	--chart-4: #6b9db5;
+	--chart-5: #e8d4a0;
+
+	/* Sidebar */
+	--sidebar: rgba(0, 29, 53, 0.95);
+	--sidebar-foreground: #ffffff;
+	--sidebar-primary: #c4973a;
+	--sidebar-primary-foreground: #001d35;
+	--sidebar-accent: rgba(155, 186, 202, 0.15);
+	--sidebar-accent-foreground: #ffffff;
+	--sidebar-border: rgba(155, 186, 202, 0.12);
+	--sidebar-ring: #c4973a;
+
+	/* Code */
+	--code: rgba(0, 29, 53, 0.8);
+	--code-foreground: #9bbaca;
+	--code-highlight: rgba(196, 151, 58, 0.1);
+	--code-number: rgba(155, 186, 202, 0.5);
 }
 
 @layer base {
@@ -273,7 +258,7 @@ a {
 	color: var(--gold);
 
 	&:hover {
-		color: var(--gold-lt);
+		color: var(--gold-light);
 		cursor: pointer;
 	}
 
