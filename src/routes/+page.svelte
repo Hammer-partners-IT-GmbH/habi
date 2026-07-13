@@ -1,12 +1,10 @@
 <script lang="ts">
 	import * as Accordion from '$lib/components/ui/accordion/index.js';
-	import * as Tabs from '$lib/components/ui/tabs/index.js';
-	import * as Card from '$lib/components/ui/card/index.js';
 	import { Badge } from '$lib/components/ui/badge/index.js';
 	import { Button } from '$lib/components/ui/button/index.js';
+	import * as Card from '$lib/components/ui/card/index.js';
 	import { Separator } from '$lib/components/ui/separator/index.js';
-
-	let mobileMenuOpen = $state(false);
+	import * as Tabs from '$lib/components/ui/tabs/index.js';
 
 	const features = [
 		{
@@ -144,83 +142,7 @@
 
 <div class="min-h-screen">
 	<!-- Navigation -->
-	<nav
-		class="fixed top-0 right-0 left-0 z-50 border-b border-white/10 bg-navy/95 backdrop-blur-md"
-	>
-		<div class="container">
-			<div class="flex h-16 items-center justify-between">
-				<!-- Logo -->
-				<a href="/" class="flex items-center gap-2 no-underline">
-					<div class="flex flex-col leading-none">
-						<span
-							class="font-display text-xl font-light tracking-tight text-white"
-							>HaBI<sup class="text-xs text-gold">®</sup></span
-						>
-						<span class="font-sans text-[10px] font-light tracking-widest text-steel uppercase"
-							>Hammer Business Intelligence</span
-						>
-					</div>
-				</a>
-
-				<!-- Desktop Nav -->
-				<div class="hidden items-center gap-8 md:flex">
-					<a href="#loesungen" class="font-sans text-sm font-light text-white/80 no-underline hover:text-white transition-colors">Lösungen</a>
-					<a href="#habimeddetails" class="font-sans text-sm font-light text-white/80 no-underline hover:text-white transition-colors">HaBI med®</a>
-					<a href="#faq" class="font-sans text-sm font-light text-white/80 no-underline hover:text-white transition-colors">FAQ</a>
-					<Button size="sm" class="bg-gold text-navy-dark font-medium hover:bg-gold-light border-0">
-						Demo anfragen
-					</Button>
-				</div>
-
-				<!-- Mobile menu toggle -->
-				<button
-					class="flex flex-col gap-1.5 p-2 md:hidden"
-					onclick={() => (mobileMenuOpen = !mobileMenuOpen)}
-					aria-label="Menü öffnen"
-				>
-					<span
-						class="block h-0.5 w-5 bg-white transition-all {mobileMenuOpen
-							? 'translate-y-2 rotate-45'
-							: ''}"
-					></span>
-					<span
-						class="block h-0.5 w-5 bg-white transition-all {mobileMenuOpen ? 'opacity-0' : ''}"
-					></span>
-					<span
-						class="block h-0.5 w-5 bg-white transition-all {mobileMenuOpen
-							? '-translate-y-2 -rotate-45'
-							: ''}"
-					></span>
-				</button>
-			</div>
-
-			<!-- Mobile Menu -->
-			{#if mobileMenuOpen}
-				<div class="border-t border-white/10 py-4 md:hidden">
-					<div class="flex flex-col gap-3">
-						<a
-							href="#loesungen"
-							onclick={() => (mobileMenuOpen = false)}
-							class="font-sans text-sm text-white/80 no-underline hover:text-white"
-						>Lösungen</a>
-						<a
-							href="#habimeddetails"
-							onclick={() => (mobileMenuOpen = false)}
-							class="font-sans text-sm text-white/80 no-underline hover:text-white"
-						>HaBI med®</a>
-						<a
-							href="#faq"
-							onclick={() => (mobileMenuOpen = false)}
-							class="font-sans text-sm text-white/80 no-underline hover:text-white"
-						>FAQ</a>
-						<Button size="sm" class="w-fit bg-gold text-navy-dark font-medium hover:bg-gold-light border-0">
-							Demo anfragen
-						</Button>
-					</div>
-				</div>
-			{/if}
-		</div>
-	</nav>
+	
 
 	<!-- Hero -->
 	<section class="relative flex min-h-screen items-center overflow-hidden pt-16">
@@ -333,7 +255,7 @@
 			</div>
 
 			<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-				{#each features as feature}
+				{#each features as feature (feature.title)}
 					<Card.Root
 						class="border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:border-gold/20 hover:bg-white/8"
 					>
@@ -375,7 +297,7 @@
 			</div>
 
 			<Tabs.Root value="fin" class="w-full">
-				<Tabs.List variant="underline" class="mb-12 border-b border-white/10 w-full justify-start gap-0 bg-transparent p-0 h-auto rounded-none">
+				<Tabs.List variant="line" class="mb-12 border-b border-white/10 w-full justify-start gap-0 bg-transparent p-0 h-auto rounded-none">
 					<Tabs.Trigger
 						value="fin"
 						class="rounded-none border-b-2 border-transparent px-6 pb-4 pt-2 font-sans text-base font-light text-white/60 data-[state=active]:border-gold data-[state=active]:text-white transition-all"
@@ -413,9 +335,9 @@
 								{habiFin.description}
 							</p>
 							<ul class="space-y-3">
-								{#each habiFin.features as feat}
+								{#each habiFin.features as feat (feat)}
 									<li class="flex items-start gap-3">
-										<span class="mt-0.5 text-gold text-base flex-shrink-0">→</span>
+										<span class="mt-0.5 text-gold text-base shrink-0">→</span>
 										<span class="font-sans text-sm font-light text-white/80">{feat}</span>
 									</li>
 								{/each}
@@ -441,7 +363,7 @@
 								</div>
 								<!-- Mock chart bars -->
 								<div class="mb-6 flex items-end gap-2 h-32">
-									{#each [60, 80, 45, 95, 70, 85, 55, 90, 75, 65] as h}
+									{#each [60, 80, 45, 95, 70, 85, 55, 90, 75, 65] as h (h)}
 										<div
 											class="flex-1 rounded-sm bg-gold/20 transition-all hover:bg-gold/40"
 											style="height: {h}%"
@@ -481,9 +403,9 @@
 								{habiMed.description}
 							</p>
 							<ul class="space-y-3">
-								{#each habiMed.features as feat}
+								{#each habiMed.features as feat (feat)}
 									<li class="flex items-start gap-3">
-										<span class="mt-0.5 text-gold text-base flex-shrink-0">→</span>
+										<span class="mt-0.5 text-gold text-base shrink-0">→</span>
 										<span class="font-sans text-sm font-light text-white/80">{feat}</span>
 									</li>
 								{/each}
@@ -499,7 +421,7 @@
 							<div class="rounded-2xl border border-white/10 bg-navy-dark p-6">
 								<div class="font-sans text-xs uppercase tracking-widest text-steel/50 mb-4">Honorarprognose</div>
 								<div class="flex items-end gap-1 h-20 mb-4">
-									{#each [40, 55, 70, 60, 80, 75, 90, 85, 95, 88] as h, i}
+									{#each [40, 55, 70, 60, 80, 75, 90, 85, 95, 88] as h, i (i)}
 										<div
 											class="flex-1 rounded-sm transition-all hover:opacity-80"
 											style="height: {h}%; background-color: {i >= 7 ? 'rgba(196,151,58,0.5)' : 'rgba(155,186,202,0.2)'}"
@@ -543,9 +465,9 @@
 								{habiDent.description}
 							</p>
 							<ul class="space-y-3">
-								{#each habiDent.features as feat}
+								{#each habiDent.features as feat (feat)}
 									<li class="flex items-start gap-3">
-										<span class="mt-0.5 text-steel/60 text-base flex-shrink-0">→</span>
+										<span class="mt-0.5 text-steel/60 text-base shrink-0">→</span>
 										<span class="font-sans text-sm font-light text-white/60">{feat}</span>
 									</li>
 								{/each}
@@ -589,7 +511,7 @@
 			</div>
 
 			<div class="grid gap-6 md:grid-cols-3">
-				{#each habiMed.components as component, i}
+				{#each habiMed.components as component, i (i)}
 					<Card.Root
 						class="border-white/10 bg-white/5 backdrop-blur-sm"
 					>
@@ -605,9 +527,9 @@
 						</Card.Header>
 						<Card.Content>
 							<ul class="space-y-2.5">
-								{#each component.items as item}
+								{#each component.items as item (item)}
 									<li class="flex items-start gap-2.5">
-										<span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold/60"></span>
+										<span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-gold/60"></span>
 										<span class="font-sans text-sm font-light leading-relaxed text-steel/70"
 											>{item}</span
 										>
@@ -682,7 +604,7 @@
 				</div>
 
 				<Accordion.Root type="multiple" class="space-y-3">
-					{#each faqItems as item}
+					{#each faqItems as item (item.id)}
 						<Accordion.Item
 							value={item.id}
 							class="rounded-xl border border-white/10 bg-white/5 px-6"
@@ -703,56 +625,5 @@
 			</div>
 		</div>
 	</section>
-
-	<!-- Footer -->
-	<footer class="border-t border-white/10 py-12">
-		<div class="container">
-			<div class="grid gap-8 md:grid-cols-3">
-				<div>
-					<div class="mb-3 flex flex-col leading-none">
-						<span class="font-display text-xl font-light text-white"
-							>HaBI<sup class="text-xs text-gold">®</sup></span
-						>
-						<span class="font-sans text-[10px] font-light tracking-widest text-steel/60 uppercase"
-							>Hammer Business Intelligence</span
-						>
-					</div>
-					<p class="font-sans text-sm font-light text-steel/50 max-w-xs">
-						Digitale Reporting-Lösungen für das Gesundheitswesen und darüber hinaus.
-					</p>
-				</div>
-
-				<div>
-					<h4 class="font-sans text-xs font-medium uppercase tracking-widest text-steel/40 mb-4">Lösungen</h4>
-					<ul class="space-y-2">
-						<li><a href="#loesungen" class="font-sans text-sm text-steel/60 no-underline hover:text-white transition-colors">HaBI fin</a></li>
-						<li><a href="#loesungen" class="font-sans text-sm text-steel/60 no-underline hover:text-white transition-colors">HaBI med®</a></li>
-						<li><a href="#loesungen" class="font-sans text-sm text-steel/60 no-underline hover:text-white transition-colors">HaBI dent (in Entwicklung)</a></li>
-					</ul>
-				</div>
-
-				<div>
-					<h4 class="font-sans text-xs font-medium uppercase tracking-widest text-steel/40 mb-4">Unternehmen</h4>
-					<ul class="space-y-2">
-						<li><a href="https://hammer.partners" class="font-sans text-sm text-steel/60 no-underline hover:text-white transition-colors">Hammer & Partner</a></li>
-						<li><a href="#faq" class="font-sans text-sm text-steel/60 no-underline hover:text-white transition-colors">FAQ</a></li>
-						<li><a href="mailto:info@hammer.partners" class="font-sans text-sm text-steel/60 no-underline hover:text-white transition-colors">Kontakt</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<Separator class="bg-white/10 my-8" />
-
-			<div class="flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
-				<p class="font-sans text-xs font-light text-steel/40">
-					© {new Date().getFullYear()} Hammer & Partner IT GmbH. Alle Rechte vorbehalten.
-				</p>
-				<div class="flex gap-6">
-					<a href="/impressum" class="font-sans text-xs text-steel/40 no-underline hover:text-steel transition-colors">Impressum</a>
-					<a href="/datenschutz" class="font-sans text-xs text-steel/40 no-underline hover:text-steel transition-colors">Datenschutz</a>
-				</div>
-			</div>
-		</div>
-	</footer>
 </div>
 
