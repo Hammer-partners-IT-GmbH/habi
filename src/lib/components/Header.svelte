@@ -16,8 +16,8 @@
 							class="font-display text-xl font-light tracking-tight text-white"
 							>HaBI</span
 						>
-						<span class="font-sans text-[10px] font-light tracking-widest text-steel uppercase"
-							>Hammer Business Intelligence</span
+						<span class="font-sans text-[10px] font-light tracking-widest text-steel"
+							>Hammer partners Business Intelligence</span
 						>
 					</div>
 				</a>

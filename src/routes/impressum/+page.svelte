@@ -175,24 +175,6 @@
 					</Card.Content>
 				</Card.Root>
 
-				<!-- Aufsichtsbehörde (fehlende Angabe ergänzt, mit Hinweis auf Ausfüllung) -->
-				<Card.Root id="aufsicht" class="border-white/10 bg-white/5 backdrop-blur-sm">
-					<Card.Header class="pb-3">
-						<div class="mb-2 flex items-center gap-3">
-							<Card.Title class="font-display text-lg font-light text-white">
-								Zuständige Aufsichtsbehörde
-							</Card.Title>
-						</div>
-					</Card.Header>
-					<Card.Content>
-						<p class="font-sans text-sm font-light leading-relaxed text-white/80">
-							[Zuständige Aufsichts- bzw. Kammerbehörde, sofern für die Tätigkeit
-							erforderlich – z. B. bei berufsrechtlichen Vorgaben, ansonsten entfällt dieser
-							Punkt]
-						</p>
-					</Card.Content>
-				</Card.Root>
-
 				<!-- EU-Streitschlichtung -->
 				<Card.Root id="streit" class="border-white/10 bg-white/5 backdrop-blur-sm">
 					<Card.Header class="pb-3">

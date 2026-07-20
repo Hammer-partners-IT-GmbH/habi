@@ -109,7 +109,7 @@
 	const faqItems = [
 		{
 			id: 'faq-1',
-			question: 'Wer ist die Hammer & Partner IT GmbH?',
+			question: 'Wer ist die Hammer partners IT GmbH?',
 			answer:
 				'Die Gesellschaft ist aus der Überzeugung gegründet worden, dass die Informationen der laufenden Buchhaltung allein für die fundierte betriebswirtschaftliche Beratung größerer ärztlicher Praxen nicht ausreichend sind. Daher haben sich die Profis der Steuerberatung von Hammer & Partner mit IT-Experten in der Abrechnung kassenärztlicher Leistungen zusammengetan und die Hammer & Partner IT GmbH gegründet – mit dem Ziel, maßgeschneiderte digitale Lösungen für das Gesundheitswesen und andere Branchen zu entwickeln.'
 		},
@@ -117,7 +117,7 @@
 			id: 'faq-2',
 			question: 'Was ist die HaBI-App?',
 			answer:
-				'HaBI® steht für Hammer Business Intelligence und ist unser besonderes Reporting-System. Es handelt sich um ein individuelles digitales Werkzeug, das auf Basis von MS PowerBI® entwickelt wurde und auf Ihre spezifischen Abläufe und Anforderungen angepasst wird. Unsere Mandantinnen und Mandanten erhalten Zugang per App oder Webbrowser und können damit ihre unternehmerischen Daten jederzeit analysieren – von aggregierten Summen bis hin zu einzelnen Transaktionen.'
+				'HaBI® steht für Hammer partners Business Intelligence und ist unser besonderes Reporting-System. Es handelt sich um ein individuelles digitales Werkzeug, das auf Basis von MS PowerBI® entwickelt wurde und auf Ihre spezifischen Abläufe und Anforderungen angepasst wird. Unsere Mandantinnen und Mandanten erhalten Zugang per App oder Webbrowser und können damit ihre unternehmerischen Daten jederzeit analysieren – von aggregierten Summen bis hin zu einzelnen Transaktionen.'
 		},
 		{
 			id: 'faq-3',
