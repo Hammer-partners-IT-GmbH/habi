@@ -167,13 +167,6 @@
 
 		<div class="container relative py-24 lg:py-32">
 			<div class="mx-auto max-w-4xl text-center">
-				<Badge
-					class="mb-6 border border-gold/30 bg-gold/10 text-gold hover:bg-gold/10"
-					variant="outline"
-				>
-					MS PowerBI® basiertes Reporting
-				</Badge>
-
 				<h1
 					class="font-display mb-6 text-5xl font-light leading-tight tracking-tight text-white md:text-7xl lg:text-8xl"
 				>
