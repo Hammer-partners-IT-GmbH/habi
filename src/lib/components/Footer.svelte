@@ -43,7 +43,7 @@
 
 			<div class="flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
 				<p class="font-sans text-xs font-light text-steel/40">
-					© {new Date().getFullYear()} Hammer & Partner IT GmbH. Alle Rechte vorbehalten.
+					© {new Date().getFullYear()} Hammer partners IT GmbH. Alle Rechte vorbehalten.
 				</p>
 				<div class="flex gap-6">
 					<a href="/impressum" class="font-sans text-xs text-steel/40 no-underline hover:text-steel transition-colors">Impressum</a>
