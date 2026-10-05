@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Hero from '$lib/components/Hero.svelte';
+	import PageContainer from '$lib/components/PageContainer.svelte';
 	import * as Accordion from '$lib/components/ui/accordion/index.js';
 	import { Badge } from '$lib/components/ui/badge/index.js';
 	import { Button } from '$lib/components/ui/button/index.js';
@@ -142,103 +144,48 @@
 
 <div class="min-h-screen">
 	<!-- Navigation -->
-	
 
-	<!-- Hero -->
-	<section class="relative flex min-h-screen items-center overflow-hidden pt-16">
-		<!-- Background decoration -->
-		<div
-			class="pointer-events-none absolute inset-0 overflow-hidden"
-			aria-hidden="true"
+	<PageContainer>
+		<Hero
+			title="Erfolgreich mit digitaler <span class='block text-transparent bg-clip-text' style='background-image: linear-gradient(135deg, #c4973a, #d9b264)'>Geschäftsanalyse</span>"
+			subtitle="Erhalten Sie eine Sofort-Analyse Ihrer Daten mit HaBI<sup class='text-xs'>®</sup> – Ihrem individuellen digitalen Reporting-Werkzeug. Angepasst auf Ihre Abläufe, schnell und zeitsparend."
 		>
-			<div
-				class="absolute top-1/4 -right-32 h-96 w-96 rounded-full bg-steel/5 blur-3xl animate-pulse-slow"
-			></div>
-			<div
-				class="absolute bottom-1/4 -left-32 h-80 w-80 rounded-full bg-gold/5 blur-3xl animate-pulse-slow"
-				style="animation-delay: 2s"
-			></div>
-			<!-- Grid lines -->
-			<div
-				class="absolute inset-0 opacity-[0.03]"
-				style="background-image: linear-gradient(rgba(155,186,202,1) 1px, transparent 1px), linear-gradient(90deg, rgba(155,186,202,1) 1px, transparent 1px); background-size: 80px 80px"
-			></div>
-		</div>
-
-		<div class="container relative py-24 lg:py-32">
-			<div class="mx-auto max-w-4xl text-center">
-				<h1
-					class="font-display mb-6 text-5xl font-light leading-tight tracking-tight text-white md:text-7xl lg:text-8xl"
+			{#snippet primary()}
+				<Button
+					size="lg"
+					class="bg-gold text-navy-dark font-medium hover:bg-gold-light border-0 px-8 text-base"
 				>
-					Erfolgreich mit digitaler
-					<span
-						class="block text-transparent bg-clip-text"
-						style="background-image: linear-gradient(135deg, #c4973a, #d9b264)"
-					>Geschäftsanalyse</span>
-				</h1>
+					Jetzt Demo anfragen
+				</Button>
+			{/snippet}
 
-				<p
-					class="mx-auto mb-10 max-w-2xl font-sans text-lg font-light leading-relaxed text-steel-light/90 md:text-xl"
+			{#snippet secondary()}
+				<Button
+					size="lg"
+					variant="outline"
+					class="border-white/20 text-white hover:bg-white/10 hover:text-white px-8 text-base"
 				>
-					Erhalten Sie eine Sofort-Analyse Ihrer Daten mit HaBI<sup class="text-xs">®</sup> – Ihrem
-					individuellen digitalen Reporting-Werkzeug. Angepasst auf Ihre Abläufe, schnell und
-					zeitsparend.
-				</p>
+					Mehr über HaBI® erfahren
+				</Button>
+			{/snippet}
+		</Hero>
 
-				<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
-					<Button
-						size="lg"
-						class="bg-gold text-navy-dark font-medium hover:bg-gold-light border-0 px-8 text-base"
-					>
-						Jetzt Demo anfragen
-					</Button>
-					<Button
-						size="lg"
-						variant="outline"
-						class="border-white/20 text-white hover:bg-white/10 hover:text-white px-8 text-base"
-					>
-						Mehr über HaBI® erfahren
-					</Button>
-				</div>
-
-				<!-- Trust indicators -->
-				<div class="mt-16 flex flex-wrap items-center justify-center gap-8">
-					<div class="flex items-center gap-2 text-steel/70">
-						<span class="text-gold text-lg">✓</span>
-						<span class="font-sans text-sm">DSGVO-konform</span>
-					</div>
-					<div class="flex items-center gap-2 text-steel/70">
-						<span class="text-gold text-lg">✓</span>
-						<span class="font-sans text-sm">Cloudbasiert & sicher</span>
-					</div>
-					<div class="flex items-center gap-2 text-steel/70">
-						<span class="text-gold text-lg">✓</span>
-						<span class="font-sans text-sm">Individuell konfigurierbar</span>
-					</div>
-					<div class="flex items-center gap-2 text-steel/70">
-						<span class="text-gold text-lg">✓</span>
-						<span class="font-sans text-sm">App & Webzugriff</span>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Scroll indicator -->
-		<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-steel/40">
+		<div
+			class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-steel/40"
+		>
 			<span class="font-sans text-xs tracking-widest uppercase">Mehr erfahren</span>
 			<svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"></path>
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"
+				></path>
 			</svg>
 		</div>
-	</section>
+	</PageContainer>
 
 	<!-- Features Grid -->
 	<section class="border-t border-white/10 bg-navy-dark py-24">
 		<div class="container">
 			<div class="mx-auto mb-16 max-w-2xl text-center">
-				<h2
-					class="font-display mb-4 text-4xl font-light tracking-tight text-white md:text-5xl"
-				>
+				<h2 class="font-display mb-4 text-4xl font-light tracking-tight text-white md:text-5xl">
 					Intelligenter in der digitalen Ära
 				</h2>
 				<p class="font-sans text-base font-light text-steel/80">
@@ -273,14 +220,10 @@
 	<section id="loesungen" class="py-24">
 		<div class="container">
 			<div class="mx-auto mb-16 max-w-2xl text-center">
-				<span
-					class="font-sans mb-3 block text-xs font-medium uppercase tracking-[0.2em] text-gold"
-				>
+				<span class="font-sans mb-3 block text-xs font-medium uppercase tracking-[0.2em] text-gold">
 					Individuelle Lösungen für Sie
 				</span>
-				<h2
-					class="font-display mb-4 text-4xl font-light tracking-tight text-white md:text-5xl"
-				>
+				<h2 class="font-display mb-4 text-4xl font-light tracking-tight text-white md:text-5xl">
 					HaBI<sup class="text-2xl">®</sup> – Hammer Business Intelligence
 				</h2>
 				<p class="font-sans text-base font-light text-steel/80">
@@ -290,7 +233,10 @@
 			</div>
 
 			<Tabs.Root value="fin" class="w-full">
-				<Tabs.List variant="line" class="mb-12 border-b border-white/10 w-full justify-start gap-0 bg-transparent p-0 h-auto rounded-none">
+				<Tabs.List
+					variant="line"
+					class="mb-12 border-b border-white/10 w-full justify-start gap-0 bg-transparent p-0 h-auto rounded-none"
+				>
 					<Tabs.Trigger
 						value="fin"
 						class="rounded-none border-b-2 border-transparent px-6 pb-4 pt-2 font-sans text-base font-light text-white/60 data-[state=active]:border-gold data-[state=active]:text-white transition-all"
@@ -347,7 +293,9 @@
 							<div class="absolute top-0 right-0 h-32 w-32 bg-gold/5 rounded-full blur-2xl"></div>
 							<div class="relative">
 								<div class="mb-6 flex items-center justify-between">
-									<span class="font-sans text-xs uppercase tracking-widest text-steel/50">Dashboard Vorschau</span>
+									<span class="font-sans text-xs uppercase tracking-widest text-steel/50"
+										>Dashboard Vorschau</span
+									>
 									<div class="flex gap-1.5">
 										<div class="h-2.5 w-2.5 rounded-full bg-red-400/60"></div>
 										<div class="h-2.5 w-2.5 rounded-full bg-yellow-400/60"></div>
@@ -412,12 +360,16 @@
 						<!-- Stats card -->
 						<div class="space-y-4">
 							<div class="rounded-2xl border border-white/10 bg-navy-dark p-6">
-								<div class="font-sans text-xs uppercase tracking-widest text-steel/50 mb-4">Honorarprognose</div>
+								<div class="font-sans text-xs uppercase tracking-widest text-steel/50 mb-4">
+									Honorarprognose
+								</div>
 								<div class="flex items-end gap-1 h-20 mb-4">
 									{#each [40, 55, 70, 60, 80, 75, 90, 85, 95, 88] as h, i (i)}
 										<div
 											class="flex-1 rounded-sm transition-all hover:opacity-80"
-											style="height: {h}%; background-color: {i >= 7 ? 'rgba(196,151,58,0.5)' : 'rgba(155,186,202,0.2)'}"
+											style="height: {h}%; background-color: {i >= 7
+												? 'rgba(196,151,58,0.5)'
+												: 'rgba(155,186,202,0.2)'}"
 										></div>
 									{/each}
 								</div>
@@ -505,9 +457,7 @@
 
 			<div class="grid gap-6 md:grid-cols-3">
 				{#each habiMed.components as component, i (i)}
-					<Card.Root
-						class="border-white/10 bg-white/5 backdrop-blur-sm"
-					>
+					<Card.Root class="border-white/10 bg-white/5 backdrop-blur-sm">
 						<Card.Header class="pb-3">
 							<div
 								class="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-gold/10 font-display text-lg text-gold"
@@ -548,14 +498,10 @@
 					style="background: radial-gradient(ellipse at 50% 0%, rgba(196,151,58,0.12) 0%, transparent 60%)"
 				></div>
 				<div class="relative">
-					<h2
-						class="font-display mb-4 text-4xl font-light tracking-tight text-white md:text-5xl"
-					>
+					<h2 class="font-display mb-4 text-4xl font-light tracking-tight text-white md:text-5xl">
 						Bereit für digitale Transparenz?
 					</h2>
-					<p
-						class="mx-auto mb-8 max-w-xl font-sans text-base font-light text-steel/80"
-					>
+					<p class="mx-auto mb-8 max-w-xl font-sans text-base font-light text-steel/80">
 						Lernen Sie HaBI® kennen und entdecken Sie, wie Ihre unternehmerischen Daten lebendig
 						werden. Wir freuen uns auf Ihre Anfrage.
 					</p>
@@ -589,9 +535,7 @@
 					>
 						Häufige Fragen
 					</span>
-					<h2
-						class="font-display mb-4 text-4xl font-light tracking-tight text-white md:text-5xl"
-					>
+					<h2 class="font-display mb-4 text-4xl font-light tracking-tight text-white md:text-5xl">
 						FAQ
 					</h2>
 				</div>
@@ -619,4 +563,3 @@
 		</div>
 	</section>
 </div>
-
