@@ -149,26 +149,7 @@
 		<Hero
 			title="Erfolgreich mit digitaler <span class='block text-transparent bg-clip-text' style='background-image: linear-gradient(135deg, #c4973a, #d9b264)'>Geschäftsanalyse</span>"
 			subtitle="Erhalten Sie eine Sofort-Analyse Ihrer Daten mit HaBI<sup class='text-xs'>®</sup> – Ihrem individuellen digitalen Reporting-Werkzeug. Angepasst auf Ihre Abläufe, schnell und zeitsparend."
-		>
-			{#snippet primary()}
-				<Button
-					size="lg"
-					class="bg-gold text-navy-dark font-medium hover:bg-gold-light border-0 px-8 text-base"
-				>
-					Jetzt Demo anfragen
-				</Button>
-			{/snippet}
-
-			{#snippet secondary()}
-				<Button
-					size="lg"
-					variant="outline"
-					class="border-white/20 text-white hover:bg-white/10 hover:text-white px-8 text-base"
-				>
-					Mehr über HaBI® erfahren
-				</Button>
-			{/snippet}
-		</Hero>
+		/>
 
 		<div
 			class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-steel/40"

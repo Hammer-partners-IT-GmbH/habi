@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { sanitizeHTML } from '$lib/utils/sanitizeHTML';
+
 	const {
 		title = '',
 		subtitle = '',
@@ -15,19 +17,16 @@
 </script>
 
 <div class="mx-auto max-w-4xl text-center">
+	<!-- svelte-ignore a11y_missing_content -->
 	<h1
 		class="font-display mb-6 text-5xl font-light leading-tight tracking-tight text-white md:text-7xl lg:text-8xl"
-	>
-		{#if title}
-			{@html title}
-		{/if}
-	</h1>
+		use:sanitizeHTML={[title]}
+	></h1>
 
 	<p
 		class="mx-auto mb-10 max-w-2xl font-sans text-lg font-light leading-relaxed text-steel-light/90 md:text-xl"
-	>
-		{subtitle}
-	</p>
+		use:sanitizeHTML={[subtitle]}
+	></p>
 
 	<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
 		<button
