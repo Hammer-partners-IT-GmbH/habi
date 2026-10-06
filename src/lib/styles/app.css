@@ -397,6 +397,24 @@ a {
 		color: var(--color-code-foreground);
 	}
 
+	/* Accordion specific styles to match page cards */
+	.cn-accordion > * {
+		@apply overflow-hidden rounded-2xl border border-white/10 bg-navy-dark p-0;
+	}
+
+	.cn-accordion [data-slot='accordion-trigger'] {
+		@apply w-full bg-transparent px-6 py-4 text-left;
+	}
+
+	.cn-accordion-trigger-icon {
+		transition: transform 200ms ease;
+	}
+
+	/* when content is open, rotate the chevron */
+	[data-slot='accordion-item'][data-state='open'] .cn-accordion-trigger-icon {
+		transform: rotate(180deg);
+	}
+
 	[data-line-numbers] {
 		display: grid;
 		min-width: 100%;

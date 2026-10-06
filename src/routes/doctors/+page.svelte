@@ -3,6 +3,7 @@
 	import Laptop from '$lib/assets/laptop.png';
 	import Hero from '$lib/components/Hero.svelte';
 	import PageContainer from '$lib/components/PageContainer.svelte';
+	import * as Accordion from '$lib/components/ui/accordion';
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
 	import { Spinner } from '$lib/components/ui/spinner';
@@ -10,6 +11,10 @@
 
 	let submitted = $state(false);
 </script>
+
+<svelte:head>
+	<title>Ärzte - HaBI</title>
+</svelte:head>
 
 <div class="min-h-screen">
 	<PageContainer>
@@ -416,7 +421,7 @@
 
 			<div class="mt-8 rounded-2xl border border-white/10 bg-navy-dark p-6">
 				<h3 class="text-lg font-semibold mb-2">
-					Hammer & Partner: Übersetzer zwischenMedizin und Wirtschaft
+					Hammer & Partner: Übersetzer zwischen Medizin und Wirtschaft
 				</h3>
 				<div class="flex justify-center">
 					<Button
@@ -566,7 +571,7 @@
 				>
 					<Input placeholder="Name" name="name" id="name" type="text" required />
 					<Input placeholder="E-Mail" name="email" id="email" type="email" required />
-					<Input placeholder="Company" name="company" id="company" type="text" required />
+					<Input placeholder="Firma" name="company" id="company" type="text" required />
 					<Textarea placeholder="Nachricht" name="message" id="message" required />
 					<Button type="submit">
 						{#if submitted}
@@ -575,6 +580,63 @@
 						Absenden</Button
 					>
 				</form>
+			</div>
+
+			<div class="mt-8 mb-4">
+				<h2 class="text-xl font-semibold">FAQ</h2>
+				<Accordion.Root type="single">
+					<Accordion.Item value="item-1">
+						<Accordion.Trigger>Von wem ist die HaBI-APP?</Accordion.Trigger>
+						<Accordion.Content>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum inventore
+							deserunt nesciunt a eius minus deleniti officia laborum eligendi odio, reiciendis
+							impedit animi, harum facere. Dignissimos cumque explicabo atque!
+						</Accordion.Content>
+					</Accordion.Item>
+					<Accordion.Item value="item-2">
+						<Accordion.Trigger>Wie ist der Datenschutz geregelt?</Accordion.Trigger>
+						<Accordion.Content
+							>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos harum maiores
+							accusantium sint repellendus itaque maxime nisi quas. Sapiente commodi recusandae,
+							eius voluptatum itaque omnis voluptate animi aliquid aliquam voluptates?</Accordion.Content
+						>
+					</Accordion.Item>
+					<Accordion.Item value="item-3">
+						<Accordion.Trigger>Was kostet HaBI und wie läuft die Einführung ab?</Accordion.Trigger>
+						<Accordion.Content>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, ea fugiat ipsum odit
+							dolore, unde corrupti, aliquam aspernatur quisquam omnis sequi! Fuga, repudiandae ab.
+							Atque ea consequatur consectetur obcaecati iste.
+						</Accordion.Content>
+					</Accordion.Item>
+					<Accordion.Item value="item-4">
+						<Accordion.Trigger>
+							Muss ich meinen aktuellen Steuerberater wechseln, um HaBI zu nutzen?
+						</Accordion.Trigger>
+						<Accordion.Content>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. A eum non ratione facere
+							officiis voluptatem dolorum temporibus quod explicabo, id ipsa molestiae laborum sed
+							tempora veniam hic accusamus inventore cumque?
+						</Accordion.Content>
+					</Accordion.Item>
+					<Accordion.Item value="item-5">
+						<Accordion.Trigger>Welche Daten braucht HaBI – und woher kommen sie?</Accordion.Trigger>
+						<Accordion.Content>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione impedit
+							adipisci explicabo optio culpa nam consequuntur eligendi, temporibus voluptate
+							distinctio voluptas sit. Doloribus suscipit praesentium beatae delectus, quis
+							obcaecati.
+						</Accordion.Content>
+					</Accordion.Item>
+					<Accordion.Item value="item-6">
+						<Accordion.Trigger>
+							Bekomme ich konkrete Handlungsempfehlungen oder nur eine Analyse?
+						</Accordion.Trigger>
+						<Accordion.Content>
+							Bekomme ich konkrete Handlungsempfehlungen oder nur eine Analyse?
+						</Accordion.Content>
+					</Accordion.Item>
+				</Accordion.Root>
 			</div>
 		</div>
 	</PageContainer>
