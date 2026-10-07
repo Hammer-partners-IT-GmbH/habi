@@ -618,62 +618,192 @@
 				<h2 class="text-xl font-semibold">FAQ</h2>
 				<Accordion.Root type="single">
 					<Accordion.Item value="item-0">
-						<Accordion.Trigger>Wer ist Hammer & Partner IT GmbH?</Accordion.Trigger>
+						<Accordion.Trigger
+							>Was bringt mir die HaBI-App gegenüber meinen normalen BWA- und
+							KV-Abrechnungsberichten?</Accordion.Trigger
+						>
 						<Accordion.Content>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum inventore
-							deserunt nesciunt a eius minus deleniti officia laborum eligendi odio, reiciendis
-							impedit animi, harum facere. Dignissimos cumque explicabo atque!
+							Klassische BWAs vom Steuerberater oder KV-Abrechnungsunterlagen sind stichtagbezogen,
+							oft schwer lesbar und liegen separat vor. Die <b class="font-bold">HaBI-App</b> führt
+							<b class="font-bold">
+								alle Fibu-, Lohn-, KV- und Privatabrechnungsdaten in einer einzigen Oberfläche
+								zusammen.
+							</b> Sie sehen sofort Kennzahlen wie den Deckungsbeitrag pro Behandlungsfall, die Auslastung
+							je Arzt/Arbeitsplatz oder die Entwicklung von Scheinzahlen und Honoraren – visuell aufbereitet
+							und tagesaktuell statt Wochen später. Die zusammengefassten Daten können in allen Bereichen
+							schrittweise über einen Drilldown bis auf die Einzeldatensätze aufgeschlüsselt werden.
 						</Accordion.Content>
 					</Accordion.Item>
 					<Accordion.Item value="item-1">
-						<Accordion.Trigger>Von wem ist die HaBI-APP?</Accordion.Trigger>
+						<Accordion.Trigger
+							>Brauche ich Vorkenntnisse in Power BI oder Datenanalyse?</Accordion.Trigger
+						>
 						<Accordion.Content>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum inventore
-							deserunt nesciunt a eius minus deleniti officia laborum eligendi odio, reiciendis
-							impedit animi, harum facere. Dignissimos cumque explicabo atque!
+							<b class="font-bold">Nein.</b> Die HaBI-App ist als fertige Web-Anwendung für den Praxisalltag
+							gestaltet. Sie bedienen interaktive Grafiken und Tabellen intuitiv per Klick oder Filter
+							(z. B. Standort, Quartal, Leistungsbereich) – ähnlich wie beim Online-Banking.
 						</Accordion.Content>
 					</Accordion.Item>
 					<Accordion.Item value="item-2">
-						<Accordion.Trigger>Wie ist der Datenschutz geregelt?</Accordion.Trigger>
-						<Accordion.Content
-							>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos harum maiores
-							accusantium sint repellendus itaque maxime nisi quas. Sapiente commodi recusandae,
-							eius voluptatum itaque omnis voluptate animi aliquid aliquam voluptates?</Accordion.Content
+						<Accordion.Trigger>Für welche Praxisstrukturen ist das Tool geeignet?</Accordion.Trigger
 						>
+						<Accordion.Content>
+							Die HaBI-App skaliert flexibel – von der <b class="font-bold">Einzelpraxis</b> über
+							<b class="font-bold">Berufsausübungsgemeinschaften (BAG)</b> bis hin zu
+							<b class="font-bold">Medizinischen Versorgungszentren (MVZ)</b>
+							mit mehreren Standorten und angestellten Ärztinnen und Ärzten.
+						</Accordion.Content>
 					</Accordion.Item>
 					<Accordion.Item value="item-3">
-						<Accordion.Trigger>Was kostet HaBI und wie läuft die Einführung ab?</Accordion.Trigger>
+						<Accordion.Trigger>Wer entwickelt die HaBI-App?</Accordion.Trigger>
 						<Accordion.Content>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, ea fugiat ipsum odit
-							dolore, unde corrupti, aliquam aspernatur quisquam omnis sequi! Fuga, repudiandae ab.
-							Atque ea consequatur consectetur obcaecati iste.
+							Die App wird seit 2024 von Hammer&Partner IT GmbH in Zusammenarbeit mit Hammer &
+							Partner mbB mit Sitz in Bremen entwickelt. Hammer & Partner mbB ist eine
+							Beratungsgesellschaft aus Wirtschaftsprüfern, Steuerberatern und Rechtsanwälten, die
+							eine ausgewiesene Expertise für das <a
+								href="https://hammer.partners/branchen/gesundheit-soziales"
+								target="_blank">Gesundheitswesen</a
+							> besitzen und schwerpunktmäßig sowohl Selbstständige aus Heilberufen als auch große Medizinische
+							Versorgungszentren betreuen.
 						</Accordion.Content>
 					</Accordion.Item>
 					<Accordion.Item value="item-4">
-						<Accordion.Trigger>
-							Muss ich meinen aktuellen Steuerberater wechseln, um HaBI zu nutzen?
-						</Accordion.Trigger>
+						<Accordion.Trigger>Welche Datenquellen werden genau angebunden?</Accordion.Trigger>
 						<Accordion.Content>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. A eum non ratione facere
-							officiis voluptatem dolorum temporibus quod explicabo, id ipsa molestiae laborum sed
-							tempora veniam hic accusamus inventore cumque?
+							Die HaBI-App aggregiert und verknüpft automatisch oder per einfachem Upload:
+							<ul class="list-disc list-inside">
+								<li class="mb-2">
+									<b class="font-bold">Finanz- & Lohnbuchhaltung:</b> Addison, DATEV oder andere Buchhaltungssysteme
+									(Kosten- und Erlöskonten, Personalkosten, Sachkosten).
+								</li>
+								<li class="mb-2">
+									<b class="font-bold">KV-Abrechnung:</b> CON-Dateien, KV-Honorarbescheide, Regelleistungsvolumina
+									(RLV), Qualifikationsgebundenes Zusatzvolumen (QZV) und Restanten/Kürzungen.
+								</li>
+								<li class="mb-2">
+									<b class="font-bold">Privatabrechnung (GOÄ/BG):</b> Daten aus der Praxisverwaltungssoftware
+									(PVS) oder Schnittstellen externer Abrechnungsstellen (PVS/PAD-Formate, DVS etc.).
+								</li>
+							</ul>
 						</Accordion.Content>
 					</Accordion.Item>
 					<Accordion.Item value="item-5">
-						<Accordion.Trigger>Welche Daten braucht HaBI – und woher kommen sie?</Accordion.Trigger>
+						<Accordion.Trigger>Wie kommen die Daten in die HaBI-App?</Accordion.Trigger>
 						<Accordion.Content>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione impedit
-							adipisci explicabo optio culpa nam consequuntur eligendi, temporibus voluptate
-							distinctio voluptas sit. Doloribus suscipit praesentium beatae delectus, quis
-							obcaecati.
+							<ul class="list-disc list-inside">
+								<li class="mb-2">
+									<b class="font-bold">Automatisierte Schnittstellen:</b> Über gesicherte API-Schnittstellen
+									(z. B. DATEV Connect, AddisonConnect) werden Ihre Buchhaltungsdaten regelmäßig aktualisiert.
+								</li>
+								<li class="mb-2">
+									<b class="font-bold">Easy-Upload:</b> Für CON-Dateien, KV-Bescheide oder PVS-Exporte
+									steht ein sicherer Upload-Bereich bereit. Die Aufbereitung und Verknüpfung der Formate
+									übernimmt das System im Hintergrund. Wenn Sie Mitglied der KV-Bremen sind, können Sie
+									uns für einen automatisierten Upload der Quartalsdaten (CON-Datei, Honorarbescheid)
+									bevollmächtigen.
+								</li>
+							</ul>
 						</Accordion.Content>
 					</Accordion.Item>
 					<Accordion.Item value="item-6">
+						<Accordion.Trigger>Wie oft werden die Daten aktualisiert?</Accordion.Trigger>
+						<Accordion.Content>
+							<ul class="list-disc list-inside">
+								<li class="mb-2">
+									<b class="font-bold">Daten der Finanz- und Lohnbuchhaltung:</b> In der Regel werden
+									die Daten mit Abschluss der Lohn- und Gehaltsbuchhaltung monatlich aktualisiert. Bei
+									größeren Einheiten ist auch eine Aktualisierung im Tages -oder Wochenrhythmus möglich.
+								</li>
+								<li class="mb-2">
+									<b class="font-bold">KV-Abrechnung/Privatabrechnung:</b> Über die Easy-Upload-Funktion
+									der CON-Datei bzw. PAD-Datei ist eine jederzeitige Aktualisierung der Daten möglich.
+									Die automatisierte Aktualisierung der KV-Daten über eine KV-Vollmacht erfolgt mit Ablauf
+									des Quartals bzw. Erstellung des Honorarbescheids.
+								</li>
+							</ul>
+						</Accordion.Content>
+					</Accordion.Item>
+					<Accordion.Item value="item-7">
+						<Accordion.Trigger>Können die Daten exportiert werden?</Accordion.Trigger>
+						<Accordion.Content>
+							Ja. Zur weiteren Verarbeitung können die Reports im Excel-Format exportiert werden.
+						</Accordion.Content>
+					</Accordion.Item>
+					<Accordion.Item value="item-8">
+						<Accordion.Trigger
+							>Wie wird der Datenschutz (DSGVO / Patientengeheimnis nach § 203 StGB) gewahrt?</Accordion.Trigger
+						>
+						<Accordion.Content>
+							<ul class="list-disc list-inside">
+								<li class="mb-2">
+									<b class="font-bold">Pseudonymisierte Daten:</b> Es werden für die
+									betriebswirtschaftliche Analyse primär
+									<b class="font-bold">pseudonymisierte Abrechnungsdaten</b> verarbeitet. Die Patientendaten
+									verbleiben in Ihrem lokalen Praxisverwaltungssystem.
+								</li>
+								<li class="mb-2">
+									<b class="font-bold">Hosting in Deutschland:</b> Alle Daten werden in nach ISO 27001
+									zertifizierten deutschen Rechenzentren (Microsoft Azure Region Deutschland) verschlüsselt
+									gespeichert und übertragen.
+								</li>
+								<li class="mb-2">
+									<b class="font-bold">Rechte- & Rollenkonzept:</b> Sie entscheiden genau, wer was sehen
+									darf (z. B. Praxisinhaber sieht alles, Standortleiter nur den eigenen Standort, angestellte
+									Ärzte nur eigene Leistungsdaten).
+								</li>
+							</ul>
+						</Accordion.Content>
+					</Accordion.Item>
+					<Accordion.Item value="item-9">
+						<Accordion.Trigger
+							>Welche konkreten Fragen beantwortet mir die HaBI-App im Alltag?</Accordion.Trigger
+						>
+						<Accordion.Content>
+							<ul class="list-disc list-inside">
+								<li class="mb-2">
+									<b class="font-bold">Wirtschaftlichkeit:</b> Wie entwickeln sich Umsatz und Rohertrag
+									pro Behandlungsfall im Vergleich zum Vorjahr?
+								</li>
+								<li class="mb-2">
+									<b class="font-bold">KV-Optimierung:</b> Schöpfe ich mein RLV/QZV optimal aus oder drohen
+									Honorarabzüge durch Überschreitung?
+								</li>
+								<li class="mb-2">
+									<b class="font-bold">Privatärztlicher Anteil:</b> Wie hoch ist der GOÄ-Anteil am Gesamtumsatz
+									und welche Ziffern werden am häufigsten abgerechnet?
+								</li>
+								<li class="mb-2">
+									<b class="font-bold">Personalkostenquote:</b> Wie stehen meine Lohnkosten im Verhältnis
+									zu den Gesamteinnahmen – auch im Hinblick auf Überstunden oder Urlaubsrückstellungen?
+								</li>
+								<li class="mb-2">
+									<b class="font-bold">Ärzte- & Standortvergleich:</b> Wie hoch sind Honorareingänge und
+									Fallzahlen je Ärztin/Arzt bzw. je Filiale (Benchmarking)?
+								</li>
+							</ul>
+						</Accordion.Content>
+					</Accordion.Item>
+					<Accordion.Item value="item-10">
 						<Accordion.Trigger>
-							Bekomme ich konkrete Handlungsempfehlungen oder nur eine Analyse?
+							Wie aufwendig ist die Einrichtung für mein Praxisteam?
 						</Accordion.Trigger>
 						<Accordion.Content>
-							Bekomme ich konkrete Handlungsempfehlungen oder nur eine Analyse?
+							Der Aufwand für Ihre Praxis ist minimal. Nach der initialen Abstimmung der
+							Datenquellen und der Einrichtung des Rechtekonzepts kümmern wir uns um die Anbindung.
+							Wenn Sie bereits die Finanz- und Lohnbuchhaltung von Hammer & Partner mbB erstellen
+							lassen, fällt nur ein minimaler Einrichtungsaufwand an. In anderen Fällen ist die
+							Anbindung von Standardschnittstellen ebenfalls innerhalb eines kurzen Zeitraums
+							möglich.
+						</Accordion.Content>
+					</Accordion.Item>
+					<Accordion.Item value="item-12">
+						<Accordion.Trigger>
+							Kann das Dashboard an individuelle Wünsche angepasst werden?
+						</Accordion.Trigger>
+						<Accordion.Content>
+							<b class="font-bold">Ja.</b> Neben Standard-Analysen lassen sich individuelles Controlling
+							(z. B. Verteilung von Gerätekosten, individuelle Bonusregelungen für angestellte Ärzte oder
+							spezielle Kennzahlen für OP-Zentren) flexibel ergänzen.
 						</Accordion.Content>
 					</Accordion.Item>
 				</Accordion.Root>

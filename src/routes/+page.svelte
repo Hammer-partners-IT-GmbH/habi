@@ -262,11 +262,6 @@
 									</li>
 								{/each}
 							</ul>
-							<div class="mt-8">
-								<Button class="bg-gold text-navy-dark font-medium hover:bg-gold-light border-0">
-									Mehr über HaBI fin
-								</Button>
-							</div>
 						</div>
 						<div
 							class="relative overflow-hidden rounded-2xl border border-white/10 bg-navy-dark p-8"
@@ -332,11 +327,6 @@
 									</li>
 								{/each}
 							</ul>
-							<div class="mt-8">
-								<Button class="bg-gold text-navy-dark font-medium hover:bg-gold-light border-0">
-									Mehr über HaBI med®
-								</Button>
-							</div>
 						</div>
 						<!-- Stats card -->
 						<div class="space-y-4">
@@ -398,11 +388,6 @@
 									</li>
 								{/each}
 							</ul>
-							<div class="mt-8">
-								<Button variant="outline" class="border-white/20 text-white hover:bg-white/10">
-									Auf dem Laufenden bleiben
-								</Button>
-							</div>
 						</div>
 						<div
 							class="relative flex min-h-64 items-center justify-center overflow-hidden rounded-2xl border border-dashed border-white/20 bg-navy-dark p-8"
