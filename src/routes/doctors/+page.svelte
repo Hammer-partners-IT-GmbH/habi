@@ -2,9 +2,13 @@
 	import Doctor from '$lib/assets/doctor.png';
 	import Laptop from '$lib/assets/laptop.png';
 	import NoIdea from '$lib/assets/no_idea.png';
+	import Hammer from '$lib/assets/people/01_hammer.png';
+	import Husted from '$lib/assets/people/01_hustedt.png';
+	import Schumacher from '$lib/assets/people/01_schumacher.png';
 	import Typing from '$lib/assets/typing.png';
 	import Hero from '$lib/components/Hero.svelte';
 	import PageContainer from '$lib/components/PageContainer.svelte';
+	import PersonBanner from '$lib/components/PersonBanner.svelte';
 	import * as Accordion from '$lib/components/ui/accordion';
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
@@ -82,6 +86,17 @@
 					</div>
 				</div>
 			</div>
+
+			<PersonBanner
+				title="Anamnese, wirtschaftliche Gesundheit, Diagnose, Behandlung."
+				description="Gehen Sie den ersten Schritt zu besseren, klaren Entscheidungen in Ihrer Praxis. Mehr zu
+						HaBI und Beratung im persönlichen Gespräch."
+				email="mailto:idk"
+				image={Husted}
+				name="Marc-Andreas Hustedt"
+				role="Steuerberater & Fachanwalt für Steuerrecht"
+			/>
+
 			<div class="mt-6 rounded-2xl border border-white/10 bg-navy-dark p-6">
 				<h4 class="text-xl font-semibold mb-2">Was Sie davon haben</h4>
 				<p class="font-sans text-base font-light text-steel/80">
@@ -341,6 +356,15 @@
 					</div>
 				</div>
 			</div>
+
+			<PersonBanner
+				title="HaBI zeigt, wo Sie stehen. Hammer & Partner mbB Wirtschaftsprüfer, Steuerberater, Rechtsanwälte zeigt, was zu tun ist."
+				description="HaBI ersetzt keine Beratung – HaBI macht sichtbar, wie datenbasiert Hammer & Partner mbB Wirtschaftsprüfer, Steuerberater, Rechtsanwälte arbeiten."
+				email="mailto:idk"
+				image={Hammer}
+				name="Thorsten Hammer"
+				role="Wirtschaftsprüfer & Steuerberater"
+			/>
 
 			<div class="mt-6 grid gap-6 md:grid-cols-3">
 				<div
@@ -627,6 +651,15 @@
 					>
 				</form>
 			</div>
+
+			<PersonBanner
+				title="Anamnese, wirtschaftliche Gesundheit, Diagnose, Behandlung."
+				description="Gehen Sie den 1. Schritt zu besseren, klaren Entscheidungen in Ihrer Praxis. Mehr zu HaBI und Beratung im persönlichen Gespräch."
+				email="mailto:idk"
+				image={Schumacher}
+				name="Oliver Schumacher"
+				role="Wirtschaftsprüfer & Steuerberater"
+			/>
 
 			<div class="mt-8 mb-4">
 				<h2 class="text-xl font-semibold">FAQ</h2>
