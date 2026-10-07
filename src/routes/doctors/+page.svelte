@@ -50,6 +50,19 @@
 
 			<div class="mt-6 rounded-2xl border border-white/10 bg-navy-dark p-6">
 				<div class="flex flex-col md:flex-row items-center md:items-start gap-3">
+					<div class="w-full md:w-1/2">
+						<p class="font-sans text-base font-light text-steel/80">
+							Ihre Praxiszahlen jederzeit im Griff – mit HaBI und der Beratung von Hammer & Partner.
+						</p>
+					</div>
+					<div class="w-full md:w-1/2 flex md:justify-center">
+						<Button variant="outline" class="w-full md:w-auto">Jetzt Beraten lassen</Button>
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-6 rounded-2xl border border-white/10 bg-navy-dark p-6">
+				<div class="flex flex-col md:flex-row items-center md:items-start gap-3">
 					<div class="flex-1">
 						<p class="font-sans text-base font-light text-steel/80">
 							HaBI liefert genau das. Ein digitales Auswertungssystem, das Ihre Finanz- und KV-Daten
