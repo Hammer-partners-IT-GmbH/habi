@@ -27,8 +27,6 @@
 		<Hero
 			title="Wirtschaftliche Sicherheit für eine ausbalancierte Praxis – jederzeit digital abrufbar mit HaBI"
 			subtitle="Wir übersetzen Ihre finanziellen und medizinischen Leistungsdaten in klare Entscheidungen: weniger Aufwand mit Zahlen, mehr Ertrag pro Quartal, ruhigere Entscheidungen auf belastbaren Fakten – und die Sicherheit, dass Ihre Praxis sich wirtschaftlich trägt."
-			ctaPrimary="Jetzt Beraten lassen"
-			ctaSecondary="Mehr über HaBI"
 		/>
 
 		<div class="container mx-auto mt-8 max-w-3xl">
@@ -42,7 +40,7 @@
 						/>
 					</div>
 					<div class="flex-1">
-						<p class="font-sans text-base font-light text-steel/80 mb-6">
+						<p class="font-sans text-base font-light text-white/80 mb-6">
 							Personalmangel, Honorarkürzungen, Nachfolge: Als Unternehmer-Arzt müssen Sie heute
 							unternehmerische Entscheidungen treffen – oft schneller, als die klassischen
 							Auswertungen dies zulassen. Was Ihnen dafür fehlt: aktuelle Zahlen, die Sie sofort
@@ -55,7 +53,7 @@
 			<div class="mt-6 rounded-2xl border border-white/10 bg-navy-dark p-6">
 				<div class="flex flex-col md:flex-row items-center md:items-start gap-3">
 					<div class="w-full md:w-1/2">
-						<p class="font-sans text-base font-light text-steel/80">
+						<p class="font-sans text-base font-light text-white/80">
 							Ihre Praxiszahlen jederzeit im Griff – mit HaBI und der Beratung von Hammer & Partner.
 						</p>
 					</div>
@@ -68,7 +66,7 @@
 			<div class="mt-6 rounded-2xl border border-white/10 bg-navy-dark p-6">
 				<div class="flex flex-col md:flex-row items-center md:items-start gap-3">
 					<div class="flex-1">
-						<p class="font-sans text-base font-light text-steel/80">
+						<p class="font-sans text-base font-light text-white/80">
 							HaBI liefert genau das. Ein digitales Auswertungssystem, das Ihre Finanz- und KV-Daten
 							auf Knopfdruck sichtbar macht – übersichtlich, tagesaktuell, einfach. Hinter HaBI
 							steht die Hammer partners IT GmbH. Sie bündelt das digitale Know-how einer
@@ -92,7 +90,7 @@
 				title="Anamnese, wirtschaftliche Gesundheit, Diagnose, Behandlung."
 				description="Gehen Sie den ersten Schritt zu besseren, klaren Entscheidungen in Ihrer Praxis. Mehr zu
 						HaBI und Beratung im persönlichen Gespräch."
-				email="mailto:idk"
+				email="mailto:m.husted@hammer.partners"
 				image={Husted}
 				name="Marc-Andreas Hustedt"
 				role="Steuerberater & Fachanwalt für Steuerrecht"
@@ -100,7 +98,7 @@
 
 			<div class="mt-6 rounded-2xl border border-white/10 bg-navy-dark p-6">
 				<h4 class="text-xl font-semibold mb-2">Was Sie davon haben</h4>
-				<p class="font-sans text-base font-light text-steel/80">
+				<p class="font-sans text-base font-light text-white/80">
 					Endlich weniger Papierkram – Schluss mit BWA‑Stapeln. Die relevanten Zahlen sind digital
 					im Zugriff und lassen sich auf Knopfdruck abrufen. Was früher wochenlang in Auswertungen
 					lag, sehen Sie mit HaBI sofort.
@@ -115,7 +113,7 @@
 							>1</span
 						>
 						<h4 class="relative z-10 text-lg font-semibold">Schneller entscheiden</h4>
-						<p class="relative z-10 mt-2 text-steel/80">
+						<p class="relative z-10 mt-2 text-white/80">
 							Investitionen in Geräte oder Personal absichern – auf Knopfdruck, statt wochen-lang
 							auf die nächste BWA zu warten.
 						</p>
@@ -127,7 +125,7 @@
 							>2</span
 						>
 						<h4 class="relative z-10 text-lg font-semibold">Volle Transparenz</h4>
-						<p class="relative z-10 mt-2 text-steel/80">
+						<p class="relative z-10 mt-2 text-white/80">
 							Honorarkürzungen und Ertrags-verschiebungen erkennen, bevor sie Monate später auf
 							Ihrem Konto ankommen.
 						</p>
@@ -139,7 +137,7 @@
 							>3</span
 						>
 						<h4 class="relative z-10 text-lg font-semibold">Frühwarnsystem</h4>
-						<p class="relative z-10 mt-2 text-steel/80">
+						<p class="relative z-10 mt-2 text-white/80">
 							Gebuchte Leistungen und Personalkosten jederzeit im Blick. Bis in die Details der
 							einzelnen Mitarbeiter- und Leistungsebenen.
 						</p>
@@ -151,7 +149,7 @@
 							>4</span
 						>
 						<h4 class="relative z-10 text-lg font-semibold">Zahlenpaket für die Nachfolge</h4>
-						<p class="relative z-10 mt-2 text-steel/80">
+						<p class="relative z-10 mt-2 text-white/80">
 							Eine saubere digitale Datenbasis erleichtert es spürbar, die Praxis zu bewerten und zu
 							übergeben.
 						</p>
@@ -172,7 +170,7 @@
 						<h4 class="text-xl font-semibold mb-2">
 							HaBI zeigt Ihnen, wo Sie stehen. Hammer & Partner zeigen Ihnen, was zu tun ist.
 						</h4>
-						<p class="font-sans text-base font-light text-steel/80">
+						<p class="font-sans text-base font-light text-white/80">
 							Erst die Verbindung aus dem digitalen Cockpit und persönlicher Beratung macht Ihre
 							Zahlen wirklich nutzbar
 						</p>
@@ -215,7 +213,7 @@
 								/>
 							</svg>
 						</div>
-						<p class="text-steel/80">
+						<p class="text-white/80">
 							Mit HaBI rufen Sie Finanz- und KV-Daten Ihrer Praxis jederzeit übersichtlich ab – ohne
 							Wartezeit auf die nächste BWA.
 						</p>
@@ -243,7 +241,7 @@
 								/>
 							</svg>
 						</div>
-						<p class="text-steel/80">
+						<p class="text-white/80">
 							Im Austausch mit den Beratern von Hammer & Partner besprechen Sie die Zahlen im
 							Kontext Ihrer Praxis.
 						</p>
@@ -267,7 +265,7 @@
 								/>
 							</svg>
 						</div>
-						<p class="text-steel/80">
+						<p class="text-white/80">
 							Ob Personalaufbau, Investition oder Nachfolge: Sie entscheiden immer auf einer
 							aktuellen, belastbaren Datenbasis.
 						</p>
@@ -277,7 +275,7 @@
 
 			<div class="mt-8 rounded-2xl border border-white/10 bg-navy-dark p-6">
 				<h4 class="text-lg font-semibold mb-2">HaBI im Detail</h4>
-				<p class="font-sans text-sm text-steel/80 mb-6">
+				<p class="font-sans text-sm text-white/80 mb-6">
 					HaBI ist ein interaktives Praxis-Cockpit auf Power-BI-Basis. Hammer partners IT GmbH hat
 					es speziell zur finanziellen Steuerung medizinischer Praxen und Kliniken entwickelt. HaBI
 					unterscheidet in zwei Kernbereichen:
@@ -322,7 +320,7 @@
 						</div>
 						<div>
 							<h5 class="font-semibold mb-1">FinReports</h5>
-							<p class="text-steel/80 text-sm">
+							<p class="text-white/80 text-sm">
 								Finanz- und Lohnbuchhaltung: Einnahmen, Ausgaben, Personalkosten, Gewinn/Verlust im
 								Zeitverlauf, drill-down-fähig bis auf einzelne Mitarbeiter.
 							</p>
@@ -349,7 +347,7 @@
 						</div>
 						<div>
 							<h5 class="font-semibold mb-1">MedReports</h5>
-							<p class="text-steel/80 text-sm">
+							<p class="text-white/80 text-sm">
 								KV-Abrechnungsdaten: Umsätze, Honorarkürzungen, Fallwerte und Leistungsvergleich
 								zwischen Ärzten in der Praxis.
 							</p>
@@ -362,7 +360,7 @@
 			<PersonBanner
 				title="HaBI zeigt, wo Sie stehen. Hammer & Partner mbB Wirtschaftsprüfer, Steuerberater, Rechtsanwälte zeigt, was zu tun ist."
 				description="HaBI ersetzt keine Beratung – HaBI macht sichtbar, wie datenbasiert Hammer & Partner mbB Wirtschaftsprüfer, Steuerberater, Rechtsanwälte arbeiten."
-				email="mailto:idk"
+				email="mailto:t.hammer@hammer.partners"
 				image={Hammer}
 				name="Thorsten Hammer"
 				role="Wirtschaftsprüfer & Steuerberater"
@@ -399,7 +397,7 @@
 						/>
 					</svg>
 					<h5 class="font-semibold mb-1 text-white">Steuerliche Beratung</h5>
-					<p class="text-steel/80 text-sm">
+					<p class="text-white/80 text-sm">
 						Steueroptimierung und Jahresabschluss speziell für Arztpraxen.
 					</p>
 				</div>
@@ -423,7 +421,7 @@
 						/>
 					</svg>
 					<h5 class="font-semibold mb-1 text-white">Wirtschaftliche Beratung</h5>
-					<p class="text-steel/80 text-sm">
+					<p class="text-white/80 text-sm">
 						Personalkosten, Investitionen und Ertragslage im Blick behalten.
 					</p>
 				</div>
@@ -445,7 +443,7 @@
 						/>
 					</svg>
 					<h5 class="font-semibold mb-1 text-white">Arzt-/ Medizinrecht</h5>
-					<p class="text-steel/80 text-sm">
+					<p class="text-white/80 text-sm">
 						Vertrags-, Gesellschafts- und Kooperationsfragen rund um die Praxis.
 					</p>
 				</div>
@@ -456,7 +454,7 @@
 					<h4 class="text-lg font-semibold">
 						Die Zahlen aus HaBI sind der Startpunkt – die Beratung entscheidet, was daraus wird.
 					</h4>
-					<p class="text-steel/80">
+					<p class="text-white/80">
 						Genau hier setzt die Erfahrung von Hammer & Partner mbB Wirtschaftsprüfer,
 						Steuerberater, Rechtsanwälte mit Arztpraxen an: bei den Themen, die im Praxisalltag
 						wirklich zählen.
@@ -469,21 +467,21 @@
 					class="flex flex-col items-start gap-3 p-4 rounded-lg bg-navy-dark/40 hover:shadow-xl transition-shadow hover:-translate-y-0.5"
 				>
 					<h5 class="font-semibold text-white">Hoch spezialisiert</h5>
-					<p class="text-steel/80 text-sm">KV, BAG, MVZ, Nachfolge</p>
+					<p class="text-white/80 text-sm">KV, BAG, MVZ, Nachfolge</p>
 				</div>
 
 				<div
 					class="flex flex-col items-start gap-3 p-4 rounded-lg bg-navy-dark/40 hover:shadow-xl transition-shadow hover:-translate-y-0.5"
 				>
 					<h5 class="font-semibold text-white">Ganzheitlich</h5>
-					<p class="text-steel/80 text-sm">Steuer, Wirtschaft, Recht aus einer Hand</p>
+					<p class="text-white/80 text-sm">Steuer, Wirtschaft, Recht aus einer Hand</p>
 				</div>
 
 				<div
 					class="flex flex-col items-start gap-3 p-4 rounded-lg bg-navy-dark/40 hover:shadow-xl transition-shadow hover:-translate-y-0.5"
 				>
 					<h5 class="font-semibold text-white">Digital aufgestellt</h5>
-					<p class="text-steel/80 text-sm">„Digitale Steuerkanzlei“ von Wolters Kluwer.</p>
+					<p class="text-white/80 text-sm">„Digitale Steuerkanzlei“ von Wolters Kluwer.</p>
 				</div>
 			</div>
 
@@ -518,7 +516,7 @@
 									>1</span
 								>
 								<h4 class="relative z-10 text-lg font-semibold">Kennenlernen von HaBI</h4>
-								<p class="relative z-10 mt-2 text-steel/80">
+								<p class="relative z-10 mt-2 text-white/80">
 									Kurzer Live-Einblick in HaBI. Abstimmung, wie das System zu Ihrer Praxis passt –
 									für neue Interessenten wie für bestehende Mandanten.
 								</p>
@@ -530,7 +528,7 @@
 									>2</span
 								>
 								<h4 class="relative z-10 text-lg font-semibold">Analyse Ihrer Praxiszahlen</h4>
-								<p class="relative z-10 mt-2 text-steel/80">
+								<p class="relative z-10 mt-2 text-white/80">
 									Bei bestehenden Mandanten bauen wir auf den Zahlen auf, die wir bereits kennen.
 									Bei neuen Interessenten sichten wir deren vor-handene Auswertungen. Dann
 									identifizieren wir die Kennzahlen mit dem größten Hebel für Ihre Entscheidungen.
@@ -545,7 +543,7 @@
 								<h4 class="relative z-10 text-lg font-semibold">
 									Individuelles Konzept & HaBI-Set-up
 								</h4>
-								<p class="relative z-10 mt-2 text-steel/80">
+								<p class="relative z-10 mt-2 text-white/80">
 									Wir richten HaBI passgenau für Ihre Praxisein und begleiten die Einführung – von
 									der Datenanbindung bis zum ersten Report. Sie sind sofort auskunftsfähig, ohne
 									technischen Aufwand auf Ihrer Seite.
@@ -558,7 +556,7 @@
 									>4</span
 								>
 								<h4 class="relative z-10 text-lg font-semibold">Laufende Beratung & Sparring</h4>
-								<p class="relative z-10 mt-2 text-steel/80">
+								<p class="relative z-10 mt-2 text-white/80">
 									In Ihrem Rhythmus – ob quartalsweise, monatlich oder anlassbezogen. Sie sehen Ihre
 									Zahlen jederzeit in HaBI, wir sind für die Einordnung und Entscheidung an Ihrer
 									Seite.
@@ -583,58 +581,10 @@
 						</p>
 					</div>
 				</div>
-
-				<div class="mt-6 flex flex-col md:flex-row gap-4 justify-center">
-					<div class="flex flex-col items-center md:items-start">
-						<Button>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="84"
-								height="80"
-								viewBox="0 0 84 80"
-								fill="none"
-							>
-								<path
-									opacity="0.8"
-									fill-rule="evenodd"
-									clip-rule="evenodd"
-									d="M10.6938 3.43123C15.9374 -1.8029 24.571 -0.87121 28.9615 5.01659L34.3932 12.3003C37.9657 17.0911 37.6504 23.7868 33.4098 28.0198L32.3812 29.0465C32.3364 29.1775 32.2274 29.5892 32.3484 30.3717C32.6207 32.1338 34.0865 35.8717 40.2396 42.0138C46.3905 48.1538 50.1401 49.624 51.9203 49.8982C52.7271 50.0223 53.1492 49.9064 53.2797 49.8606L55.0371 48.1062C58.807 44.3433 64.6 43.6397 69.2674 46.1871L77.4967 50.6783C84.5432 54.5238 86.3238 64.1396 80.5502 69.9026L74.4316 76.0105C72.5036 77.9348 69.911 79.5396 66.7468 79.8358C58.9547 80.5653 40.7853 79.6347 21.6945 60.5778C3.87095 42.7861 0.450627 27.2708 0.0178639 19.6262C-0.200951 15.7608 1.61853 12.4903 3.93298 10.18L10.6938 3.43123ZM23.7893 8.90382C21.607 5.97743 17.5397 5.74474 15.2495 8.03084L8.48863 14.7796C7.06754 16.1982 6.38379 17.7615 6.46851 19.2582C6.81237 25.332 9.5747 39.3324 26.2502 55.9781C43.7445 73.4411 59.9023 73.9621 66.1472 73.3775C67.423 73.2582 68.692 72.5927 69.8761 71.4108L75.9947 65.3029C78.4822 62.8203 77.9335 58.2993 74.4109 56.3768L66.1816 51.886C63.9091 50.6459 61.2467 51.0549 59.5926 52.7059L57.6311 54.6644L55.3533 52.3643C57.6311 54.6644 57.628 54.6674 57.625 54.6704L57.6186 54.6765L57.6052 54.6894L57.5772 54.7167L57.5143 54.7755C57.4691 54.817 57.417 54.8624 57.3588 54.9113C57.2417 55.0086 57.0978 55.1184 56.9259 55.2343C56.5809 55.4661 56.1256 55.7186 55.5532 55.9322C54.3867 56.3686 52.8481 56.6029 50.9408 56.3093C47.2072 55.7346 42.2614 53.179 35.6841 46.6135C29.1089 40.0502 26.5418 35.1077 25.9636 31.3661C25.6679 29.4528 25.9038 27.9078 26.3437 26.7356C26.5593 26.1612 26.8133 25.7044 27.0465 25.359C27.1628 25.1867 27.2734 25.0427 27.3711 24.9256C27.4199 24.8671 27.4656 24.8153 27.5071 24.7701L27.5662 24.707L27.5933 24.6791L27.6062 24.666L27.6125 24.6597C27.6156 24.6566 27.6187 24.6535 29.8967 26.9533L27.6187 24.6535L28.8541 23.4203C30.7004 21.5774 30.9589 18.5182 29.2208 16.1876L23.7893 8.90382Z"
-									fill="currentColor"
-								/>
-							</svg>
-							<span>Jetzt Anrufen</span>
-						</Button>
-					</div>
-					<div class="flex flex-col items-center md:items-start">
-						<Button>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="74"
-								height="80"
-								viewBox="0 0 74 80"
-								fill="none"
-							>
-								<g opacity="0.8">
-									<path
-										d="M50.3172 46.0615C51.3143 45.0644 51.3143 43.4481 50.3172 42.451C49.3201 41.4538 47.7037 41.4538 46.7066 42.451L33.1927 55.9645L26.4875 49.2595C25.4904 48.2624 23.8738 48.2624 22.8767 49.2595C21.8796 50.2566 21.8796 51.8729 22.8767 52.87L31.3875 61.3807C32.3846 62.3778 34.0009 62.3778 34.998 61.3807L50.3172 46.0615Z"
-										fill="currentColor"
-									/>
-									<path
-										fill-rule="evenodd"
-										clip-rule="evenodd"
-										d="M22.9787 0C24.3888 0 25.5319 1.1431 25.5319 2.55319V6.80851H47.6596V2.55319C47.6596 1.1431 48.8027 0 50.2128 0C51.6228 0 52.766 1.1431 52.766 2.55319V6.80875C55.5101 6.81069 57.7546 6.82788 59.6082 6.97934C61.7528 7.15455 63.5976 7.52214 65.2919 8.38543C68.014 9.77253 70.2274 11.9859 71.6146 14.7082C72.478 16.4025 72.8453 18.2472 73.0206 20.3919C73.1915 22.483 73.1915 25.072 73.1915 28.3142V58.494C73.1915 61.7362 73.1915 64.3254 73.0206 66.4167C72.8453 68.5614 72.478 70.4061 71.6146 72.1004C70.2274 74.8225 68.014 77.0359 65.2919 78.4231C63.5976 79.2865 61.7528 79.6538 59.6082 79.8291C57.5169 80 54.928 80 51.6858 80H21.5059C18.2637 80 15.6745 80 13.5834 79.8291C11.4387 79.6538 9.59401 79.2865 7.89971 78.4231C5.17736 77.0359 2.96402 74.8225 1.57692 72.1004C0.713635 70.4061 0.346043 68.5614 0.170826 66.4167C-3.32518e-05 64.3254 -3.31014e-05 61.7365 9.41158e-07 58.494V28.3145C-3.31014e-05 25.0722 -3.32518e-05 22.483 0.170826 20.3919C0.346043 18.2472 0.713635 16.4025 1.57692 14.7082C2.96402 11.9859 5.17736 9.77253 7.89971 8.38543C9.59401 7.52214 11.4387 7.15455 13.5834 6.97934C15.4369 6.82788 17.6815 6.81069 20.4255 6.80875V2.55319C20.4255 1.1431 21.5686 0 22.9787 0ZM21.617 11.9149C18.2384 11.9149 15.858 11.9169 13.9993 12.0687C12.1703 12.2182 11.0724 12.4999 10.218 12.9353C8.45644 13.8328 7.02427 15.265 6.12674 17.0265C5.69137 17.8809 5.40967 18.9788 5.26022 20.8078C5.15592 22.0848 5.12232 23.608 5.11149 25.5319H68.08C68.0691 23.608 68.0357 22.0848 67.9312 20.8078C67.7818 18.9788 67.5003 17.8809 67.0648 17.0265C66.1672 15.265 64.735 13.8328 62.9736 12.9353C62.1192 12.4999 61.0213 12.2182 59.1922 12.0687C57.3334 11.9169 54.9532 11.9149 51.5745 11.9149H21.617ZM5.10638 58.383V30.6383H68.0851V58.383C68.0851 61.7617 68.0831 64.142 67.9312 66.0007C67.7818 67.8298 67.5003 68.9277 67.0648 69.7821C66.1672 71.5435 64.735 72.9757 62.9736 73.8734C62.1192 74.3088 61.0213 74.5903 59.1922 74.7397C57.3334 74.8916 54.9532 74.8936 51.5745 74.8936H21.617C18.2384 74.8936 15.858 74.8916 13.9993 74.7397C12.1703 74.5903 11.0724 74.3088 10.218 73.8734C8.45644 72.9757 7.02427 71.5435 6.12674 69.7821C5.69137 68.9277 5.40967 67.8298 5.26022 66.0007C5.10836 64.142 5.10638 61.7617 5.10638 58.383Z"
-										fill="currentColor"
-									/>
-								</g>
-							</svg>
-							<span>Termin Auswählen</span>
-						</Button>
-					</div>
-				</div>
 			</div>
 
 			<div class="mt-8 rounded-2xl border border-white/10 bg-navy-dark p-6">
-				<h3 class="text-lg font-semibold">Oder schreiben Sie uns!</h3>
+				<h3 class="text-lg font-semibold">Schreiben Sie uns!</h3>
 				<form
 					method="POST"
 					action="?/contact"
@@ -658,7 +608,7 @@
 			<PersonBanner
 				title="Anamnese, wirtschaftliche Gesundheit, Diagnose, Behandlung."
 				description="Gehen Sie den 1. Schritt zu besseren, klaren Entscheidungen in Ihrer Praxis. Mehr zu HaBI und Beratung im persönlichen Gespräch."
-				email="mailto:idk"
+				email="mailto:o.schumacher@hammer.partners"
 				image={Schumacher}
 				name="Oliver Schumacher"
 				role="Wirtschaftsprüfer & Steuerberater"
@@ -667,6 +617,14 @@
 			<div class="mt-8 mb-4">
 				<h2 class="text-xl font-semibold">FAQ</h2>
 				<Accordion.Root type="single">
+					<Accordion.Item value="item-0">
+						<Accordion.Trigger>Wer ist Hammer & Partner IT GmbH?</Accordion.Trigger>
+						<Accordion.Content>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum inventore
+							deserunt nesciunt a eius minus deleniti officia laborum eligendi odio, reiciendis
+							impedit animi, harum facere. Dignissimos cumque explicabo atque!
+						</Accordion.Content>
+					</Accordion.Item>
 					<Accordion.Item value="item-1">
 						<Accordion.Trigger>Von wem ist die HaBI-APP?</Accordion.Trigger>
 						<Accordion.Content>
