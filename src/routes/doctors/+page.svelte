@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Doctor from '$lib/assets/doctor.png';
 	import Laptop from '$lib/assets/laptop.png';
+	import NoIdea from '$lib/assets/no_idea.png';
 	import Hero from '$lib/components/Hero.svelte';
 	import PageContainer from '$lib/components/PageContainer.svelte';
 	import * as Accordion from '$lib/components/ui/accordion';
@@ -26,13 +27,27 @@
 		/>
 
 		<div class="container mx-auto mt-8 max-w-3xl">
-			<p class="font-sans text-base font-light text-steel/80 mb-6">
-				Personalmangel, Honorarkürzungen, Nachfolge: Als Unternehmer-Arzt müssen Sie heute
-				unternehmerische Entscheidungen treffen – oft schneller, als die klassischen Auswertungen
-				dies zulassen. Was Ihnen dafür fehlt: aktuelle Zahlen, die Sie sofort verstehen.
-			</p>
-
 			<div class="rounded-2xl border border-white/10 bg-navy-dark p-6">
+				<div class="flex flex-col md:flex-row items-center md:items-start gap-3">
+					<div class="shrink-0">
+						<img
+							src={NoIdea}
+							alt="No Idea"
+							class="w-full max-w-55 md:max-w-[320px] object-contain rounded-lg shadow-sm"
+						/>
+					</div>
+					<div class="flex-1">
+						<p class="font-sans text-base font-light text-steel/80 mb-6">
+							Personalmangel, Honorarkürzungen, Nachfolge: Als Unternehmer-Arzt müssen Sie heute
+							unternehmerische Entscheidungen treffen – oft schneller, als die klassischen
+							Auswertungen dies zulassen. Was Ihnen dafür fehlt: aktuelle Zahlen, die Sie sofort
+							verstehen.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-6 rounded-2xl border border-white/10 bg-navy-dark p-6">
 				<p class="font-sans text-base font-light text-steel/80">
 					HaBI liefert genau das. Ein digitales Auswertungssystem, das Ihre Finanz- und KV-Daten auf
 					Knopfdruck sichtbar macht – übersichtlich, tagesaktuell, einfach. Hinter HaBI steht die
