@@ -2,6 +2,7 @@
 	import Doctor from '$lib/assets/doctor.png';
 	import Laptop from '$lib/assets/laptop.png';
 	import NoIdea from '$lib/assets/no_idea.png';
+	import Typing from '$lib/assets/typing.png';
 	import Hero from '$lib/components/Hero.svelte';
 	import PageContainer from '$lib/components/PageContainer.svelte';
 	import * as Accordion from '$lib/components/ui/accordion';
@@ -48,14 +49,25 @@
 			</div>
 
 			<div class="mt-6 rounded-2xl border border-white/10 bg-navy-dark p-6">
-				<p class="font-sans text-base font-light text-steel/80">
-					HaBI liefert genau das. Ein digitales Auswertungssystem, das Ihre Finanz- und KV-Daten auf
-					Knopfdruck sichtbar macht – übersichtlich, tagesaktuell, einfach. Hinter HaBI steht die
-					Hammer partners IT GmbH. Sie bündelt das digitale Know-how einer Beratergruppe, die seit
-					mehr als 70 Jahren gemeinsam mit Hammer & Partner mbB Wirtschaftsprüfer, Steuerberater,
-					Rechtsanwälte und Ärzte in Bremen und Niedersachsen ganzheitlich und hoch spezialisiert
-					begleitet.
-				</p>
+				<div class="flex flex-col md:flex-row items-center md:items-start gap-3">
+					<div class="flex-1">
+						<p class="font-sans text-base font-light text-steel/80">
+							HaBI liefert genau das. Ein digitales Auswertungssystem, das Ihre Finanz- und KV-Daten
+							auf Knopfdruck sichtbar macht – übersichtlich, tagesaktuell, einfach. Hinter HaBI
+							steht die Hammer partners IT GmbH. Sie bündelt das digitale Know-how einer
+							Beratergruppe, die seit mehr als 70 Jahren gemeinsam mit Hammer & Partner mbB
+							Wirtschaftsprüfer, Steuerberater, Rechtsanwälte und Ärzte in Bremen und Niedersachsen
+							ganzheitlich und hoch spezialisiert begleitet.
+						</p>
+					</div>
+					<div class="grow-0">
+						<img
+							src={Typing}
+							alt="Typing"
+							class="w-full max-w-55 md:max-w-[320px] object-contain rounded-lg shadow-sm"
+						/>
+					</div>
+				</div>
 			</div>
 			<div class="mt-6 rounded-2xl border border-white/10 bg-navy-dark p-6">
 				<h4 class="text-xl font-semibold mb-2">Was Sie davon haben</h4>
