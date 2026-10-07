@@ -87,6 +87,7 @@
 				</div>
 			</div>
 
+			<!-- TODO Add email-->
 			<PersonBanner
 				title="Anamnese, wirtschaftliche Gesundheit, Diagnose, Behandlung."
 				description="Gehen Sie den ersten Schritt zu besseren, klaren Entscheidungen in Ihrer Praxis. Mehr zu
@@ -357,6 +358,7 @@
 				</div>
 			</div>
 
+			<!-- TODO Add email -->
 			<PersonBanner
 				title="HaBI zeigt, wo Sie stehen. Hammer & Partner mbB Wirtschaftsprüfer, Steuerberater, Rechtsanwälte zeigt, was zu tun ist."
 				description="HaBI ersetzt keine Beratung – HaBI macht sichtbar, wie datenbasiert Hammer & Partner mbB Wirtschaftsprüfer, Steuerberater, Rechtsanwälte arbeiten."
@@ -652,6 +654,7 @@
 				</form>
 			</div>
 
+			<!-- TODO Add email -->
 			<PersonBanner
 				title="Anamnese, wirtschaftliche Gesundheit, Diagnose, Behandlung."
 				description="Gehen Sie den 1. Schritt zu besseren, klaren Entscheidungen in Ihrer Praxis. Mehr zu HaBI und Beratung im persönlichen Gespräch."
